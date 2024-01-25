@@ -19,7 +19,7 @@ variable "location" {
 variable "bq_dataset_name" {
   description = "BigQuery Dataset Name"
   default     = "zoomcamp_dataset"
-}
+} 
 
 variable "gcs_bucket_name" {
   description = "Storage Bucket Name"
