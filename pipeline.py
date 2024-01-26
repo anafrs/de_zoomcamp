@@ -19,7 +19,7 @@ def add_data(url):
     
     #create ddl
     df.head(n=0).to_sql('ny_taxi', con=engine, if_exists = 'replace')
-    print(pd.read_sql(query, con=engine))
+    
 
     #load rest of the data
     df_iterator = pd.read_csv(url, iterator = True, chunksize= 100000)
