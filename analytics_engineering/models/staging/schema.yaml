@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: staging
+    database: de-zoomcap-411511
+    schema: trips_all_data
+
+    tables:
+      - name: green_tripdata
+      - name:
+          yellow_tripdata
+          # freshness:
+          # error_after: {count: 6, period: hour}
